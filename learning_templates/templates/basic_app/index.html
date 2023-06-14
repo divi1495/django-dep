@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+{% extends "basic_app/basic.html"%}
+    {%block body_block%}
+        {% load customTemplates %}
+        <h1>Welcome to Index Page</h1>
+        <h3>Showing Home Page now.</h3>
+        <h1>{{ text|upper }}</h1>
+        <h1>{{ text|cut:"world" }}</h1>
+        <h1>{{ number|add:"91" }}</h1>
+    {% endblock %}
